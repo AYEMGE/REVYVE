@@ -291,6 +291,106 @@
       >
     {%- endif -%}
 
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: #ffffff; /* White background */
+        font-family: 'Arial, sans-serif';
+        color: #000000; /* Default text color: black */
+      }
+
+      header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+      }
+
+      header nav ul li {
+        margin: 0 15px;
+      }
+
+      header nav ul li a {
+        color: #000080; /* Navy color for links */
+        text-decoration: none;
+      }
+
+      header nav ul li a:hover {
+        color: #000000; /* Black on hover */
+      }
+
+      .main-content h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #000080; /* Navy color for the main title */
+      }
+
+      .main-content p {
+        font-size: 1.2rem;
+        color: #000000; /* Black for the description text */
+      }
+
+      .price {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        color: #000080; /* Navy color for the price */
+      }
+
+      .shop-now {
+        background-color: #000080; /* Navy background for the button */
+        color: #ffffff; /* White text for the button */
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+      }
+
+      .shop-now:hover {
+        background-color: #000000; /* Black background on hover */
+      }
+
+      .product-display {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .product-display img {
+        max-width: 100px;
+        margin: 0 10px;
+      }
+
+      .new-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #000080; /* Navy background for the badge */
+        color: #ffffff; /* White text for the badge */
+        padding: 5px 10px;
+        border-radius: 50%;
+        font-weight: bold;
+      }
+
+      .info-sections {
+        margin-top: 30px;
+      }
+
+      .info-sections div {
+        margin-bottom: 20px;
+      }
+
+      .info-sections h2 {
+        font-size: 1.5rem;
+        color: #000080; /* Navy color for section titles */
+      }
+
+      .info-sections p {
+        font-size: 1rem;
+        color: #000000; /* Black text for the section content */
+      }
+    </style>
+    <!-- End Custom CSS -->
+
     <script>
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
